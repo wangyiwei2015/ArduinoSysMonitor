@@ -15,9 +15,9 @@ def main():
         arduino = Hardware(port=port)
         while True:
             # mode = 1
+            # sleep(1)
             # temp = manager.getTemp()
             # arduino.invoke(mode, temp)
-            # sleep(1)
 
             mode = 2
             (cpu, ram) = manager.get()
