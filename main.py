@@ -1,4 +1,4 @@
-# v1.1.2
+# v1.1.3
 
 from Internals import *
 from App import Application
