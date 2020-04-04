@@ -1,5 +1,7 @@
+# v1.1.1
+
 from Internals import *
-from gui import Application
+from App import Application
 import _thread
 from time import sleep
 
@@ -24,11 +26,10 @@ def main():
             arduino.invoke(mode, cpu)
 
             mode = 3
-            arduino.invoke(mode, ram)
             sleep(1)
+            arduino.invoke(mode, ram)
 
     manager = System_info_manager(interval=1)
-
     devices = Hardware.find()
     app = Application(devices)
     app.callback = lambda port: run(port)
